@@ -1,0 +1,19 @@
+function OnEvent(event, arg, family)
+if ( family == "lhc" ) then
+if ( event == "G_PRESSED" ) then
+if ( arg == 23 ) then
+SetMKeyState(2, family);
+end
+if ( arg == 24 ) then
+SetMKeyState(3, family);
+end
+elseif ( event == "G_RELEASED" ) then
+if ( arg == 23 ) then
+SetMKeyState(1, family);
+end
+if ( arg == 24 ) then
+SetMKeyState(1, family);
+end
+end
+end
+end
